@@ -3,43 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Makmur Affiliate Bot</title>
+<title>Makmur Affiliate Bot — Automation for TikTok Shop Affiliate Creators</title>
+<meta name="description" content="Makmur Affiliate Bot helps TikTok creators research products, generate original video concepts, and publish original review videos to their own TikTok account via TikTok's official Content Posting API.">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0a7aff">
+<meta property="og:title" content="Makmur Affiliate Bot">
+<meta property="og:description" content="Automation for TikTok Shop affiliate creators — original videos, published via TikTok's official API with your own authorization.">
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#1a1a1a;line-height:1.65}
-  h1{font-size:1.8rem} .tag{color:#666}
-  .card{border:1px solid #ddd;border-radius:12px;padding:20px;margin-top:1.5rem}
-  a{color:#0a7aff}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;max-width:820px;margin:0 auto;padding:24px 20px;color:#1a1a1a;line-height:1.65}
+  header{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #ddd}
+  header .brand{font-weight:700;font-size:1.1rem}
+  nav a{margin-left:16px;font-size:.95rem}
+  h1{font-size:2rem;margin-top:2rem} h2{font-size:1.35rem;margin-top:2.2rem} h3{font-size:1.1rem;margin-top:1.6rem}
+  .tag{color:#555;font-size:1.05rem}
+  .card{border:1px solid #ddd;border-radius:12px;padding:20px;margin-top:1.2rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  a{color:#0a7aff;text-decoration:none} a:hover{text-decoration:underline}
+  .cta{display:inline-block;background:#0a7aff;color:#fff!important;padding:10px 22px;border-radius:8px;margin-top:1rem;font-weight:600}
+  .cta:hover{text-decoration:none;background:#0866d6}
   footer{margin-top:2.5rem;color:#666;font-size:.85rem;border-top:1px solid #ddd;padding-top:1rem}
+  .faq dt{font-weight:600;margin-top:1rem} .faq dd{margin-left:0;color:#333}
 </style>
 </head>
 <body>
-<h1>Makmur Affiliate Bot</h1>
-<p class="tag">Automation for TikTok Shop affiliate creators.</p>
 
-<div class="card">
-<h2>What it does</h2>
-<p>Makmur Affiliate Bot helps creators publish <strong>original</strong> product review videos
-to their own TikTok account through TikTok's official Content Posting API — and only after
-the creator authorizes the app themselves via TikTok's OAuth authorization page
-(scope: <code>video.publish</code>). No reposting, no stolen footage, no automated login.</p>
+<header>
+  <div class="brand">Makmur Affiliate Bot</div>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#permissions">Permissions</a>
+    <a href="#faq">FAQ</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<h1>Automation for TikTok Shop affiliate creators</h1>
+<p class="tag">Makmur Affiliate Bot helps creators research TikTok Shop products, plan original review-video concepts, and publish those videos to <strong>their own TikTok account</strong> through TikTok's official Content Posting API — only after the creator authorizes the app themselves.</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>🔍 Product research</h3>
+    <p>The bot scans TikTok Shop affiliate offers and scores them by commission rate, GMV trend, and content fit — so creators focus on products worth reviewing.</p>
+  </div>
+  <div class="card">
+    <h3>🎬 Concept generation</h3>
+    <p>For each chosen product it drafts multiple original video concepts (hook, shot list, caption) that go through automated quality checks before anything is produced.</p>
+  </div>
+  <div class="card">
+    <h3>📤 Direct posting</h3>
+    <p>Finished videos are uploaded via TikTok's official Content Posting API (Direct Post). Posting <strong>never</strong> happens without the creator's own OAuth authorization.</p>
+  </div>
+  <div class="card">
+    <h3>📈 Analytics</h3>
+    <p>Post performance is tracked to detect winners and losers, so the next round of concepts learns from what actually worked.</p>
+  </div>
 </div>
 
+<h2 id="how">How it works</h2>
 <div class="card">
-<h2>How it works</h2>
 <ol>
-  <li>The bot researches TikTok Shop affiliate products and scores them.</li>
-  <li>It generates original video concepts and runs them through quality checks.</li>
-  <li>Only with the creator's explicit authorization, finished videos are uploaded
-      via the official Content Posting API (Direct Post).</li>
+  <li><strong>Research.</strong> The bot researches TikTok Shop affiliate products and scores them by commission, demand, and review-worthiness.</li>
+  <li><strong>Create.</strong> It generates original video concepts per product and runs them through quality checks.</li>
+  <li><strong>Authorize.</strong> You connect the app to your own TikTok account on TikTok's official authorization page (scopes: <code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>).</li>
+  <li><strong>Publish.</strong> With your authorization in place, finished videos are uploaded to your own account via the official Content Posting API.</li>
 </ol>
 </div>
 
+<h2 id="permissions">What the app asks for — and what it never does</h2>
 <div class="card">
-<h2>Legal</h2>
-<p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
-<p>Contact: nhanji71@gmail.com</p>
+<ul>
+  <li>Authorization happens <strong>entirely on TikTok's website</strong>. The app never asks for, collects, or stores your TikTok password.</li>
+  <li>The app uses only the scopes it needs: <code>user.info.basic</code> (to confirm which account is connected), <code>video.upload</code> and <code>video.publish</code> (to upload videos you produced).</li>
+  <li>Videos are labeled as AI-generated (<code>is_aigc</code>) where applicable, in line with TikTok's disclosure rules.</li>
+  <li>You can revoke access at any time in the TikTok app under Settings → Security → authorized apps.</li>
+</ul>
+<p>No reposting, no stolen footage, no automated login — ever.</p>
 </div>
 
-<footer>Makmur Affiliate Bot — official site for the TikTok Developer App.</footer>
+<h2>About</h2>
+<div class="card">
+<p>Makmur Affiliate Bot is a tool built by an independent creator for creators running TikTok Shop affiliate accounts. It is designed around one principle: every post that leaves the app is <strong>original work</strong>, published to the creator's <strong>own account</strong>, with the creator's <strong>explicit authorization</strong>.</p>
+<p>Contact: <a href="mailto:nhanji71@gmail.com">nhanji71@gmail.com</a></p>
+<p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+</div>
+
+<h2 id="faq">FAQ</h2>
+<div class="card">
+<dl class="faq">
+  <dt>Can this app post to someone else's account?</dt>
+  <dd>No. You can only connect an account you own or manage, and you authorize it yourself on TikTok's website.</dd>
+  <dt>Does it repost other people's videos?</dt>
+  <dd>No. The whole pipeline is built around original concepts; reposting and stolen footage are prohibited by our Terms.</dd>
+  <dt>What data does the app keep?</dt>
+  <dd>Your TikTok open ID and access token (granted by you via OAuth), creator profile info, and video upload statuses. Tokens live only on your own server. See the <a href="privacy.html">Privacy Policy</a>.</dd>
+  <dt>How do I disconnect?</dt>
+  <dd>Revoke access anytime in the TikTok app (Settings → Security → authorized apps). Revoked or expired tokens are deleted.</dd>
+</dl>
+</div>
+
+<footer>
+  Makmur Affiliate Bot — official site of the TikTok Developer App. Last updated: 10 October 2026.
+</footer>
+
 </body>
 </html>
